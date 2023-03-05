@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <AnimatePresence>
       <div className="relative h-full lg:min-h-screen">
-        <div key="background" className="absolute inset-0 h-full bg-hero-pattern bg-cover bg-center bg-no-repeat opacity-75" />
+        <div key="background" className="absolute inset-0 h-full bg-hero-pattern bg-cover bg-center bg-no-repeat opacity-100" />
 
         <motion.section
           initial="hidden"
@@ -27,9 +27,15 @@ export default function Hero() {
                 <h2>
                   Hi! I am a{" "}
                   <span className="text-primary">
-                    <motion.span variants={slideIn(0.5)}>Frontend</motion.span>
-                    <motion.span variants={slideIn(2)}> & </motion.span>
-                    <motion.span variants={slideIn(3.5)}>Backend</motion.span>
+                    <motion.span className="inline-block" variants={slideIn(1)}>
+                      Frontend
+                    </motion.span>{" "}
+                    <motion.span className="inline-block" variants={slideIn(2)}>
+                      &amp;
+                    </motion.span>{" "}
+                    <motion.span className="inline-block" variants={slideIn(3)}>
+                      Backend
+                    </motion.span>
                   </span>{" "}
                   developer.
                 </h2>
@@ -54,7 +60,7 @@ export default function Hero() {
             </div>
             <motion.div
               variants={slideInL("right", "spring", 0.7, 1.75)}
-              className="left-0 top-0 flex flex-row items-center justify-center rounded-xl border border-primary bg-white/5 py-1.5 px-3 text-center backdrop-blur-sm  lg:absolute lg:block 2xl:top-10">
+              className="left-0 top-0 flex flex-row items-center justify-center rounded-xl bg-black/40 py-1.5 px-3 text-center shadow backdrop-blur-sm lg:absolute lg:block 2xl:top-10">
               <p className={`${styles.paragraph} mx-2`}>
                 <Award className="inline text-primary" /> Graduated <span className="font-semibold">Web Development</span> at <span className="font-semibold">RTS </span>
                 <span className="hidden sm:inline-block">- 23/03/2023</span>

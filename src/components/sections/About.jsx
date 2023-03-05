@@ -13,8 +13,8 @@ export function About() {
         <h3 className={styles.sectionHeadText}>Overview.</h3>
       </motion.div>
 
-      <motion.p className="mt-4 max-w-3xl text-lg leading-loose text-primary" variants={fadeIn("right", "spring", 0.3, 1)}>
-        I'm a passionate web developer with experience in JavaScript and React. I'm quick at picking up new tools and I'm always eager to learn new things. I have a passion for creating
+      <motion.p className="mt-4 max-w-3xl text-xl leading-loose text-dimWhite" variants={fadeIn("right", "spring", 0.3, 1)}>
+        I'm a passionate web developer with experience in JavaScript and React who's quick at picking up new tools and always eager to learn new things. I have a passion for creating
         efficient, scalable and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
       <div className="mt-20 flex flex-wrap justify-center gap-10 lg:justify-start">

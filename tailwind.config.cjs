@@ -11,9 +11,11 @@ module.exports = {
         white: colors.white,
         background: "#001414",
         primary: "#00f6ff",
+        secondary: "#002929",
+        tertiary: "#009ea3",
         dimWhite: "rgba(255, 255, 255, 0.9)",
         dimBlue: "rgba(9, 151, 124)",
-        tertiary: "#009ea3",
+
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
@@ -30,6 +32,9 @@ module.exports = {
       },
       maxWidth: {
         "8xl": "90rem",
+      },
+      boxShadow: {
+        card: "0px 35px 120px -15px #155e75",
       },
     },
   },

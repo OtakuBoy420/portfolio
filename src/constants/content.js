@@ -1,29 +1,4 @@
-import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
-} from "../assets";
+import { mobile, backend, search, web, javascript, html, css, reactjs, tailwind, nodejs, mongodb, git, figma, shopify, carrent, jobit, tripguide, rts, octocube } from "../assets";
 
 export const navLinks = [
   {
@@ -54,8 +29,8 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "SEO Specialist",
+    icon: search,
   },
 ];
 
@@ -73,16 +48,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -97,10 +64,6 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
@@ -108,63 +71,61 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Web Developer - Basic Course",
+    company_name: "Roskilde Tekniske Skole",
+    icon: rts,
+    iconBg: "#f1f1f1",
+    date: "Aug 2021 - Dec 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing web applications using HTML, CSS, and JavaScript.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+      "SCRUM methodology",
+      "Github and Git",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Web Developer - Main Course",
+    company_name: "Roskilde Tekniske Skole",
+    icon: rts,
+    iconBg: "#f1f1f1",
+    date: "Jan 2022 - Mar 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Backend development using Node.js and MongoDB.",
+      "TailwindCSS and SCSS for styling.",
+      "React Native development for mobile applications.",
+      "CMS development using headless CMS like Strapi and Wordpress.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Web Developer - Internship",
+    company_name: "Octocube Games",
+    icon: octocube,
+    iconBg: "#1f1f1f",
+    date: "October 2022 - December 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing my first real world application using React.js for a client.",
+      "Communication with the client and the team.",
+      "Deploying a React.js application using Plesk and Nginx.",
+      "Working on a schedule and communicating with the client.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
+    title: "Web Developer - Current Job",
+    company_name: "Octocube Games",
+    icon: octocube,
+    iconBg: "#1f1f1f",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Making a web application discoverable using SEO techniques.",
+      "Optimizing the application for speed and performance.",
+      "Working with a community of people to improve the application.",
     ],
   },
 ];
