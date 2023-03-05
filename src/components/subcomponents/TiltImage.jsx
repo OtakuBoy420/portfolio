@@ -1,38 +1,11 @@
-import React, { useState, useRef } from "react";
-
+import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
+import { slideInL } from "../../utils/motion";
 function TiltImage({ imageUrl }) {
-  const [tiltAngle, setTiltAngle] = useState({ tiltX: 0, tiltY: 0 });
-  const imageRef = useRef();
-
-  const calculateTiltAngle = (mouseX, mouseY) => {
-    const boundingRect = imageRef.current.getBoundingClientRect();
-    const centerX = boundingRect.left + boundingRect.width / 2;
-    const centerY = boundingRect.top + boundingRect.height / 2;
-    const tiltX = Math.round(centerY - mouseY) / 10;
-    const tiltY = Math.round(centerX - mouseX) / 10;
-    return { tiltX, tiltY };
-  };
-
-  const handleMouseMove = (event) => {
-    const { clientX, clientY } = event;
-    const { tiltX, tiltY } = calculateTiltAngle(clientX, clientY);
-    setTiltAngle({ tiltX, tiltY });
-  };
-
-  const handleMouseLeave = () => {
-    setTiltAngle({ tiltX: 0, tiltY: 0 });
-  };
-
   return (
-    <img
-      ref={imageRef}
-      src={imageUrl}
-      alt="Tilt Image"
-      className="z-[2] aspect-square w-1/2 transform duration-500"
-      style={{ transform: `perspective(1000px) rotateX(${tiltAngle.tiltX}deg) rotateY(${tiltAngle.tiltY}deg)`, transition: "transform 0.2s ease-out" }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    />
+    <Tilt perspective={1000} glarePosition="all" scale={1.02} tiltReverse trackOnWindow={true} className="z-[2] w-full rounded-full">
+      <motion.img variants={slideInL("left", "spring", 0.7, 1.75)} src={imageUrl} className="aspect-square h-fit w-full" />
+    </Tilt>
   );
 }
 

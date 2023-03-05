@@ -9,22 +9,28 @@ module.exports = {
       colors: {
         black: colors.black,
         white: colors.white,
-        primary: "#00040f",
-        secondary: "#00f6ff",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
+        background: "#001414",
+        primary: "#00f6ff",
+        dimWhite: "rgba(255, 255, 255, 0.9)",
+        dimBlue: "rgba(9, 151, 124)",
+        tertiary: "#009ea3",
+        "black-100": "#100d25",
+        "black-200": "#090325",
+        "white-100": "#f3f3f3",
       },
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
-    },
-    screens: {
-      xs: "480px",
-      ss: "620px",
-      sm: "768px",
-      md: "1060px",
-      lg: "1200px",
-      xl: "1700px",
+      screens: {
+        xs: "450px",
+        "2xl": "1440px",
+      },
+      backgroundImage: {
+        "hero-pattern": "url('/src/assets/herobg.png')",
+      },
+      maxWidth: {
+        "8xl": "90rem",
+      },
     },
   },
 

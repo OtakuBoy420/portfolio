@@ -1,7 +1,7 @@
-export const slideIn = (direction, type, delay, duration) => ({
+export const slideInL = (direction, type, delay, duration) => ({
   hidden: {
-    x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-    y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
+    x: direction === "left" ? "100%" : direction === "right" ? "-100%" : 0,
+    y: direction === "up" ? "100%" : direction === "down" ? "-100%" : 0,
     opacity: 0,
   },
   show: {
@@ -17,19 +17,10 @@ export const slideIn = (direction, type, delay, duration) => ({
   },
 });
 
-export const staggerContainer = (staggerChildren, delayChildren) => ({
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren,
-      delayChildren,
-    },
-  },
-});
-
-export const slideUp = (delay) => ({
+export const slideIn = (delay, direction = "up") => ({
   hidden: {
-    y: 50,
+    x: direction === "left" ? 75 : direction === "right" ? -75 : 0,
+    y: direction === "up" ? 75 : direction === "down" ? -75 : 0,
     opacity: 0,
   },
   show: {
@@ -39,6 +30,16 @@ export const slideUp = (delay) => ({
       type: "spring",
       duration: 1.25,
       delay,
+    },
+  },
+});
+
+export const staggerContainer = (staggerChildren, delayChildren) => ({
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren,
+      delayChildren,
     },
   },
 });
@@ -70,8 +71,8 @@ export const textVariant = {
 
 export const fadeIn = (direction, type, delay, duration) => ({
   hidden: {
-    x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+    x: direction === "left" ? 50 : direction === "right" ? -50 : 0,
+    y: direction === "up" ? 50 : direction === "down" ? -50 : 0,
     opacity: 0,
   },
   show: {
@@ -100,6 +101,38 @@ export const zoomIn = (delay, duration) => ({
       delay,
       duration,
       ease: "easeOut",
+    },
+  },
+});
+
+export const navVariants = (scrolled) => ({
+  hidden: {
+    y: "-100%",
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    paddingBlock: scrolled ? "0.5rem" : "1.25rem",
+    transition: {
+      y: {
+        type: "spring",
+        delay: 0.1,
+        duration: 1,
+        ease: "easeInOut",
+      },
+      opacity: {
+        type: "tween",
+        delay: 0.1,
+        duration: 1,
+        ease: "easeInOut",
+      },
+      paddingBlock: {
+        type: "tween",
+        delay: 0,
+        duration: 0.3,
+        ease: "easeInOut",
+      },
     },
   },
 });
