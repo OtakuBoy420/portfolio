@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <AnimatePresence>
       <div className="relative h-full lg:min-h-screen">
-        <div key="background" className="absolute inset-0 h-full bg-hero-pattern bg-cover bg-center bg-no-repeat opacity-100" />
+        <div key="background" className="absolute inset-0 h-full bg-hero-pattern bg-cover bg-no-repeat xs:bg-center" />
 
         <motion.section
           initial="hidden"

@@ -13,7 +13,7 @@ export default function ExperienceCard({ experience }) {
       }>
       <div>
         <h4 className="text-2xl font-bold text-white">{experience.title}</h4>
-        <p className="mt-0 text-sm font-semibold text-dimWhite">{experience.company_name}</p>
+        <p className="!mt-0 text-sm font-semibold text-dimWhite">{experience.company_name}</p>
       </div>
       <ul className="mt-5 ml-5 list-disc space-y-2">
         {experience.points.map((point, index) => (

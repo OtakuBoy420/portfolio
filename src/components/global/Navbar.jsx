@@ -52,7 +52,7 @@ export default function Navbar() {
       initial="hidden"
       animate="show"
       variants={navVariants(scrolled)}
-      className={`${styles.paddingX} fixed top-0 z-20 flex w-full items-center py-5 ${scrolled ? "bg-secondary/75 backdrop-blur-sm" : "bg-transparent"} transition-colors duration-500`}>
+      className={`${styles.paddingX} fixed top-0 z-20 flex w-full items-center py-5 ${scrolled ? "bg-secondary" : "bg-transparent"} transition-colors duration-500`}>
       <div className="mx-auto flex w-full max-w-8xl items-center justify-between">
         <Link
           to="/"

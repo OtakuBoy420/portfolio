@@ -1,4 +1,26 @@
-import { mobile, backend, search, web, javascript, html, css, reactjs, tailwind, nodejs, mongodb, git, figma, shopify, carrent, jobit, tripguide, rts, octocube } from "../assets";
+import {
+  mobile,
+  backend,
+  search,
+  web,
+  javascript,
+  html,
+  css,
+  reactjs,
+  tailwind,
+  nodejs,
+  mongodb,
+  git,
+  figma,
+  carrent,
+  jobit,
+  tripguide,
+  rts,
+  octocube,
+  motion,
+  nextjs,
+  scss,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -47,13 +69,22 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
+
   {
     name: "React JS",
     icon: reactjs,
   },
   {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
+  },
+  {
+    name: "Framer Motion",
+    icon: motion,
   },
   {
     name: "Node JS",
@@ -63,6 +94,7 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
+
   {
     name: "git",
     icon: git,
@@ -70,6 +102,10 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
+  },
+  {
+    name: "SCSS",
+    icon: scss,
   },
 ];
 
@@ -82,11 +118,12 @@ const experiences = [
     date: "Aug 2021 - Dec 2021",
     points: [
       "Developing web applications using HTML, CSS, and JavaScript.",
+      "HTML Semantic Elements and best practices.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+      "Git and Github for version control and collaboration.",
       "SCRUM methodology",
-      "Github and Git",
     ],
   },
   {
@@ -98,26 +135,18 @@ const experiences = [
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Backend development using Node.js and MongoDB.",
-      "TailwindCSS and SCSS for styling.",
+      "TailwindCSS and SCSS styling methods.",
       "React Native development for mobile applications.",
-      "CMS development using headless CMS like Strapi and Wordpress.",
-    ],
-  },
-  {
-    title: "Web Developer - Internship",
-    company_name: "Octocube Games",
-    icon: octocube,
-    iconBg: "#1f1f1f",
-    date: "October 2022 - December 2022",
-    points: [
-      "Developing my first real world application using React.js for a client.",
-      "Communication with the client and the team.",
-      "Deploying a React.js application using Plesk and Nginx.",
+      "CMS development using WordPress.",
+      "Framer Motion for animations.",
+      "6 months internship at Octocube Games.",
+      "Developing my first real world application for a client.",
       "Working on a schedule and communicating with the client.",
+      "Deploying a React.js application to a real world server",
     ],
   },
   {
-    title: "Web Developer - Current Job",
+    title: "Web Developer - Employment",
     company_name: "Octocube Games",
     icon: octocube,
     iconBg: "#1f1f1f",
@@ -125,7 +154,7 @@ const experiences = [
     points: [
       "Making a web application discoverable using SEO techniques.",
       "Optimizing the application for speed and performance.",
-      "Working with a community of people to improve the application.",
+      "Working with different departments to build a successful product.",
     ],
   },
 ];

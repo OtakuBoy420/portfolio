@@ -14,6 +14,9 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
+import motion from "./tech/framer-motion.svg";
+import nextjs from "./tech/nextjs.svg";
+import scss from "./tech/scss.png";
 
 import shopify from "./company/shopify.png";
 import rts from "./company/rts.png";
@@ -23,4 +26,29 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-export { logo, backend, search, mobile, web, github, css, figma, git, html, javascript, mongodb, nodejs, reactjs, tailwind, shopify, carrent, octocube, jobit, tripguide, rts };
+export {
+  scss,
+  logo,
+  backend,
+  search,
+  mobile,
+  web,
+  github,
+  css,
+  figma,
+  git,
+  html,
+  javascript,
+  mongodb,
+  nodejs,
+  reactjs,
+  tailwind,
+  shopify,
+  carrent,
+  octocube,
+  jobit,
+  tripguide,
+  motion,
+  rts,
+  nextjs,
+};

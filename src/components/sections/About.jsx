@@ -10,7 +10,7 @@ export function About() {
     <>
       <motion.div variants={textVariant}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h3 className={styles.sectionHeadText}>Overview.</h3>
+        <h3 className={styles.sectionHeadText}>About me.</h3>
       </motion.div>
 
       <motion.p className="mt-4 max-w-3xl text-xl leading-loose text-dimWhite" variants={fadeIn("right", "spring", 0.3, 1)}>
@@ -26,4 +26,4 @@ export function About() {
   );
 }
 
-export default CreateSection(About, "about");
+export default CreateSection(About, "about", true);
