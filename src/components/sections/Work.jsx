@@ -7,7 +7,7 @@ import { projects } from "../../constants/content";
 import { fadeIn, textVariant } from "../../utils/motion";
 import styles from "../../constants/styles";
 import ProjectCard from "../subcomponents/ProjectCard";
-export function Work() {
+function Work() {
   return (
     <>
       <motion.div variants={textVariant}>

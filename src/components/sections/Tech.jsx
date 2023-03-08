@@ -2,7 +2,7 @@ import React from "react";
 import CreateSection from "../hoc/CreateSection";
 import { technologies } from "../../constants/content";
 import { BallCanvas } from "../canvas";
-export function Tech() {
+function Tech() {
   return (
     <div className="flex flex-row flex-wrap items-center justify-center gap-10 py-8 sm:py-24">
       {technologies.map((tech) => (

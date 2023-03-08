@@ -4,16 +4,10 @@ import { github } from "../../assets";
 import Tilt from "react-parallax-tilt";
 
 export default function ProjectCard(props) {
-  const { name, description, tags, color, index, image, link, source_code_link } = props;
+  const { name, description, tags, index, image, link, source_code_link } = props;
   return (
-    <motion.div onClick={() => window.open(link, "_blank")} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="w-full cursor-pointer rounded-2xl bg-secondary p-5 sm:w-[360px]">
+    <motion.div onClick={() => window.open(link, "_blank")} title={name} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <Tilt scale={1.075} className="w-full cursor-pointer rounded-2xl bg-secondary p-5 sm:w-[360px]">
         <div className="relative h-[230px] w-full">
           <img src={image} alt={name} className="h-full w-full rounded-2xl object-cover" />
           <div className="absolute inset-0 m-3 flex justify-end">

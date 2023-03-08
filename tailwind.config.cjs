@@ -24,7 +24,7 @@ module.exports = {
         //   tertiary: "#151030",
         //   dimPurple: "rgba(75,0,130)",
         //   dimWhite: "rgba(255, 255, 255, 0.9)",
-        //   dimBlue: "rgba(9, 151, 124)",
+        dimBlue: "rgba(9, 151, 124)",
       },
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],

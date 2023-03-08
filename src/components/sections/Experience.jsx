@@ -7,7 +7,7 @@ import { experiences } from "../../constants/content";
 import CreateSection from "../hoc/CreateSection";
 import { textVariant } from "../../utils/motion";
 import ExperienceCard from "../subcomponents/ExperienceCard";
-export function Experience() {
+function Experience() {
   return (
     <>
       <motion.div variants={textVariant}>

@@ -4,7 +4,7 @@ import { Decal, Float, OrbitControls, useTexture } from "@react-three/drei";
 import CanvasLoader from "../subcomponents/Loader";
 import { useRef, useState, useEffect } from "react";
 
-export function Ball({ imgUrl }) {
+function Ball({ imgUrl }) {
   const [decal] = useTexture([imgUrl]);
   return (
     <Float speed={1.75} rotationIntensity={0.1} floatIntensity={2}>

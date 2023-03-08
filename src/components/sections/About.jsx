@@ -5,7 +5,7 @@ import { services } from "../../constants/content";
 import ServiceCard from "../subcomponents/ServiceCard";
 import CreateSection from "../hoc/CreateSection";
 
-export function About() {
+function About() {
   return (
     <>
       <motion.div variants={textVariant}>
@@ -13,7 +13,7 @@ export function About() {
         <h3 className={styles.sectionHeadText}>About me.</h3>
       </motion.div>
 
-      <motion.p className="mt-4 max-w-3xl text-xl leading-loose text-dimWhite" variants={fadeIn("right", "spring", 0.3, 1)}>
+      <motion.p className="text-dimWhite mt-4 max-w-3xl text-xl leading-loose" variants={fadeIn("right", "spring", 0.3, 1)}>
         I'm a passionate web developer with experience in JavaScript and React who's quick at picking up new tools and always eager to learn new things. I have a passion for creating
         efficient, scalable and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
