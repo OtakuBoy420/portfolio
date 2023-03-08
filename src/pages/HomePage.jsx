@@ -5,6 +5,7 @@ import Tech from "../components/sections/Tech";
 import Work from "../components/sections/Work";
 import Contact from "../components/sections/Contact";
 import WaveDivider from "../components/subcomponents/WaveDivider";
+import { StarsCanvas } from "../components/canvas";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
       <Tech />
       <Work />
       <div className="relative z-0">
+        <StarsCanvas />
         <Contact />
       </div>
     </>

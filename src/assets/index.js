@@ -22,10 +22,9 @@ import shopify from "./company/shopify.png";
 import rts from "./company/rts.png";
 import octocube from "./company/octocube.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
+import octocubegames from "./octocubegames.jpg";
+import aniflix from "./aniflix.jpg";
+import metaversus from "./metaversus.jpg";
 export {
   scss,
   logo,
@@ -44,11 +43,11 @@ export {
   reactjs,
   tailwind,
   shopify,
-  carrent,
   octocube,
-  jobit,
-  tripguide,
   motion,
   rts,
   nextjs,
+  octocubegames,
+  aniflix,
+  metaversus,
 };
