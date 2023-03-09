@@ -18,7 +18,7 @@ export default function HomePage() {
       <Experience />
       <Tech />
       <Work />
-      <div className="relative z-0">
+      <div className="relative z-0 select-none">
         <StarsCanvas />
         <Contact />
       </div>
