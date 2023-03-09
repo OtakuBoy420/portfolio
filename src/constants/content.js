@@ -183,7 +183,7 @@ const projects = [
   },
   {
     name: "Aniflix",
-    description: "Web application that serves as an anime library. Users can search for anime with advanced search filters and view details about each anime.",
+    description: "Aniflix is a web app that serves as an anime library. Users can search for anime with advanced search filters and view details about each anime.",
     tags: [
       {
         name: "react",
@@ -204,7 +204,7 @@ const projects = [
   },
   {
     name: "Metaversus",
-    description: "Web application that serves as platform to browse through different metaverses and view details about each metaverse. Main focus is the design and user experience.",
+    description: "Metaversus is a web app that serves as platform to browse through different metaverses and view details about each metaverse.",
     tags: [
       {
         name: "nextjs",

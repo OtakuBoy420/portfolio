@@ -42,14 +42,14 @@ function Contact() {
             setLoading(true);
             emailjs
               .send(
-                "service_93u5f7s",
-                "template_v0df3ne",
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                 {
                   from_name: values.name,
                   from_email: values.email,
                   message: values.message,
                 },
-                "_j7OujbzobqSjHLyV"
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
               )
               .then(
                 () => {
@@ -94,6 +94,7 @@ function Contact() {
               <label className="relative flex flex-col">
                 <span className="mb-4 font-medium text-white">Your Message</span>
                 <Field
+                  as="textarea"
                   onChange={handleChange}
                   onBlur={handleBlur}
                   rows="7"

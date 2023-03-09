@@ -11,40 +11,18 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [currentSection, setCurrentSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const windowMiddle = scrollTop + windowHeight / 2;
-
-      // Calculate the distance between the middle of the screen and each section
-      const sectionDistances = navLinks.map((nav) => {
-        const section = document.getElementById(nav.id);
-        const sectionTop = section.getBoundingClientRect().top + scrollTop;
-        const sectionHeight = section.getBoundingClientRect().height;
-        const sectionMiddle = sectionTop + sectionHeight / 2;
-        return Math.abs(windowMiddle - sectionMiddle);
-      });
-
-      // Find the index of the section that is closest to the middle of the screen
-      const closestIndex = sectionDistances.indexOf(Math.min(...sectionDistances));
-
-      setCurrentSection(navLinks[closestIndex].title);
-
-      if (scrollTop > 50) {
+      if (scrollTop > 200) {
         setScrolled(true);
       } else {
         setScrolled(false);
-        setCurrentSection("");
       }
     };
-
     const debouncedHandleScroll = _.debounce(handleScroll, 16);
-
     window.addEventListener("scroll", debouncedHandleScroll);
-
     return () => window.removeEventListener("scroll", debouncedHandleScroll);
   }, []);
   return (
@@ -70,7 +48,7 @@ export default function Navbar() {
         <ul className="hidden list-none flex-row gap-10 sm:flex">
           {navLinks.map((item) => (
             <li key={item.id} className={` cursor-pointer text-[18px] font-medium hover:text-white`}>
-              <a href={`#${item.id}`} className={`transition-colors duration-500 hover:text-primary/70 ${currentSection === item.title ? "text-primary" : "text-dimWhite"}`}>
+              <a href={`#${item.id}`} className="transition-colors duration-500 hover:text-primary/70">
                 {item.title}
               </a>
             </li>
@@ -80,7 +58,7 @@ export default function Navbar() {
         <div className="flex flex-1 items-center justify-end sm:hidden">
           <Hamburger toggled={isMenuOpen} toggle={setIsMenuOpen} duration="0.5" />
 
-          <NavigationMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} currentSection={currentSection} />
+          <NavigationMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         </div>
       </div>
     </motion.nav>

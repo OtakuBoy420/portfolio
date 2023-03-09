@@ -11,8 +11,9 @@ module.exports = {
         white: colors.white,
         background: "#001414",
         primary: "#00f6ff",
-        secondary: "#002929",
+        secondary: "#002729",
         tertiary: "#009ea3",
+        dimBlue: "rgba(9, 151, 124)",
         "black-100": "#002020",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
@@ -24,7 +25,6 @@ module.exports = {
         //   tertiary: "#151030",
         //   dimPurple: "rgba(75,0,130)",
         //   dimWhite: "rgba(255, 255, 255, 0.9)",
-        dimBlue: "rgba(9, 151, 124)",
       },
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],

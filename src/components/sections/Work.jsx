@@ -15,10 +15,10 @@ function Work() {
         <h3 className={styles.sectionHeadText}>Projects.</h3>
       </motion.div>
       <div className="flex w-full">
-        <motion.p variants={fadeIn("", "", 0.1, 1)} className="text-dimWhite mt-3 max-w-3xl text-lg leading-[30px]">
-          These projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. It
-          reflects my ability to work with a variety of technologies and frameworks, ability to solve complex problems and that i can manage projects effectively, especially when working in
-          a team.
+        <motion.p variants={fadeIn("", "", 0.1, 1)} className="text-dimWhite mt-4 max-w-3xl text-xl leading-loose">
+          These projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories if public and live demos.
+          It reflects my ability to work with a variety of technologies and frameworks, ability to solve complex problems and that i can manage projects effectively, they are all created by
+          me from scratch.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap justify-center gap-7 lg:justify-start">
