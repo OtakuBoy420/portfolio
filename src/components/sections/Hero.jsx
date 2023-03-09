@@ -49,7 +49,7 @@ export default function Hero() {
             <motion.a
               variants={fadeIn("up", "spring", 0.7, 1)}
               href="#contact"
-              className="hover:bg-dimBlue/25 mt-8 w-full rounded-lg border-2 border-primary  bg-white/5 py-4 px-6 text-center text-2xl font-bold text-white shadow-lg backdrop-blur-sm transition-colors">
+              className="mt-8 w-full rounded-lg border-2 border-primary bg-white/5  py-4 px-6 text-center text-2xl font-bold text-white shadow-lg backdrop-blur-sm transition-colors hover:bg-dimBlue/25">
               Contact Me
             </motion.a>
           </div>

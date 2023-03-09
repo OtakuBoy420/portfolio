@@ -23,9 +23,9 @@ function Contact() {
   const [loading, setLoading] = useState(false);
   const mailRegExp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const validationSchema = Yup.object().shape({
-    name: Yup.string().required("You must enter your name").nullable(),
-    email: Yup.string().matches(mailRegExp, "You must enter a valid email").required("You must enter your email").nullable(),
-    message: Yup.string().required("You must enter a message").min(10, "Message must be at least 10 characters").nullable(),
+    name: Yup.string().required("You must enter your name"),
+    email: Yup.string().matches(mailRegExp, "You must enter a valid email").required("You must enter your email"),
+    message: Yup.string().required("You must enter a message").min(8, "Message is too short"),
   });
 
   return (
@@ -64,7 +64,7 @@ function Contact() {
               );
           }}>
           {({ errors, touched, handleChange, handleBlur }) => (
-            <Form noValidate className="mt-12 flex flex-col gap-8">
+            <Form noValidate className="mt-6 flex flex-col gap-8">
               <label className="relative flex flex-col">
                 <span className="mb-4 font-medium text-white">Your Name</span>
                 <Field
