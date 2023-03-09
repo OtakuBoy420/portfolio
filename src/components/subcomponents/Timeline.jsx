@@ -1,5 +1,5 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
-export default function ExperienceCard({ experience }) {
+export default function Timeline({ experience }) {
   return (
     <VerticalTimelineElement
       contentStyle={{ background: "#002929", color: "#fff" }}
@@ -13,7 +13,7 @@ export default function ExperienceCard({ experience }) {
       }>
       <div>
         <h4 className="text-2xl font-bold text-white">{experience.title}</h4>
-        <p className="!mt-0 text-sm font-semibold text-dimWhite">{experience.company_name}</p>
+        <p className="text-dimWhite !mt-0 text-sm font-semibold">{experience.company_name}</p>
       </div>
       <ul className="mt-5 ml-5 list-disc space-y-2">
         {experience.points.map((point, index) => (

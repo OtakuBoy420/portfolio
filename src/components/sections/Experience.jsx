@@ -6,7 +6,7 @@ import styles from "../../constants/styles";
 import { experiences } from "../../constants/content";
 import CreateSection from "../hoc/CreateSection";
 import { textVariant } from "../../utils/motion";
-import ExperienceCard from "../subcomponents/ExperienceCard";
+import Timeline from "../subcomponents/Timeline";
 function Experience() {
   return (
     <>
@@ -17,7 +17,7 @@ function Experience() {
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
+            <Timeline key={index} experience={experience} />
           ))}
         </VerticalTimeline>
       </div>
