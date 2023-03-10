@@ -9,6 +9,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import TypingText from "../subcomponents/TypingText";
 function Contact() {
   const notify = () =>
     toast("🚀 Message sent! Check your email for a reply from me soon.", {
@@ -31,8 +32,8 @@ function Contact() {
   return (
     <article className="flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row">
       <motion.div variants={slideInContact("left", "tween", 0.2, 1)} className="flex-[0.75] rounded-2xl bg-black-100 p-8">
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <TypingText title="Get in touch" />
+        <h3 className={styles.sectionHeadText}>Contact.</h3>
         <Formik
           validateOnChange={true}
           validateOnBlur={true}

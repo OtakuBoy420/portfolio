@@ -7,20 +7,21 @@ import { experiences } from "../../constants/content";
 import CreateSection from "../hoc/CreateSection";
 import { textVariant } from "../../utils/motion";
 import Timeline from "../subcomponents/Timeline";
+import TypingText from "../subcomponents/TypingText";
 function Experience() {
   return (
     <>
       <motion.div variants={textVariant}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
+        <TypingText title="My journey so far" />
         <h3 className={styles.sectionHeadText}>Experience.</h3>
       </motion.div>
-      <div className="mt-20 flex flex-col">
+      <article className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <Timeline key={index} experience={experience} />
           ))}
         </VerticalTimeline>
-      </div>
+      </article>
     </>
   );
 }

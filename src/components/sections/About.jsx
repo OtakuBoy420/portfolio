@@ -4,12 +4,13 @@ import { fadeIn, textVariant } from "../../utils/motion";
 import { services } from "../../constants/content";
 import ServiceCard from "../subcomponents/ServiceCard";
 import CreateSection from "../hoc/CreateSection";
+import TypingText from "../subcomponents/TypingText";
 
 function About() {
   return (
     <>
       <motion.div variants={textVariant}>
-        <p className={styles.sectionSubText}>Introduction</p>
+        <TypingText title="Introduction" />
         <h3 className={styles.sectionHeadText}>About me.</h3>
       </motion.div>
 

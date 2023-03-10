@@ -7,11 +7,12 @@ import { projects } from "../../constants/content";
 import { fadeIn, textVariant } from "../../utils/motion";
 import styles from "../../constants/styles";
 import ProjectCard from "../subcomponents/ProjectCard";
+import TypingText from "../subcomponents/TypingText";
 function Work() {
   return (
     <>
       <motion.div variants={textVariant}>
-        <p className={styles.sectionSubText}>My work</p>
+        <TypingText title="My work" />
         <h3 className={styles.sectionHeadText}>Projects.</h3>
       </motion.div>
       <div className="flex w-full">

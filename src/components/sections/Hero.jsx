@@ -17,7 +17,7 @@ export default function Hero() {
         viewport={{ once: true, amount: 0.25 }}
         id="home"
         className={`relative mx-auto flex max-w-8xl flex-col py-24 lg:min-h-screen 2xl:pt-36 ${styles.paddingX} `}>
-        <div className="relative flex flex-col items-center gap-12 lg:flex-row lg:gap-24">
+        <article className="relative flex flex-col items-center gap-12 lg:flex-row lg:gap-24">
           <div className={`flex-1 ${styles.flexStart} flex-col items-center xs:items-start`}>
             <motion.h1 variants={slideIn(0.1)} className={styles.heroHeadText}>
               Oliver Zeymer
@@ -65,7 +65,7 @@ export default function Hero() {
               <span className="hidden sm:inline-block">- 23/03/2023</span>
             </p>
           </motion.div>
-        </div>
+        </article>
         <ScrollButton />
       </motion.section>
     </div>

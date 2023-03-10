@@ -57,7 +57,7 @@ export const textContainer = {
 export const textVariant = {
   hidden: {
     opacity: 0,
-    y: 20,
+    y: 5,
   },
   show: {
     opacity: 1,

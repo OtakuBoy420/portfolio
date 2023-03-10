@@ -6,6 +6,7 @@ import Work from "../components/sections/Work";
 import Contact from "../components/sections/Contact";
 import WaveDivider from "../components/subcomponents/WaveDivider";
 import { StarsCanvas } from "../components/canvas";
+import Footer from "../components/global/Footer";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
         <StarsCanvas />
         <Contact />
       </div>
+      <Footer />
     </>
   );
 }
